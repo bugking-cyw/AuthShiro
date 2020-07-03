@@ -4,10 +4,8 @@ MAINTAINER cyw
 
 RUN mkdir -p /opt/apps
 
-ENV app = AuthShiro-1.0.0.jar
-
-ADD target/$app /opt/apps
+ADD target/AuthShiro-1.0.0.jar /opt/apps
 
 EXPOSE 9090
 
-ENTRYPOINT ["sh","-c","java","-jar","$app"]
+ENTRYPOINT ["sh","-c","java","-jar","/opt/apps/AuthShiro-1.0.0.jar"]
