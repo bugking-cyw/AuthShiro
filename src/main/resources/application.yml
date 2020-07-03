@@ -51,4 +51,6 @@ mapper:
 
 logging:
     # Debug打印SQL
+
     level.com.wang.mapper: debug
+    file: /Users/chenyawen/document/run.log

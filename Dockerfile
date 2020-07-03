@@ -8,4 +8,4 @@ ADD target/AuthShiro-1.0.0.jar /opt/apps
 
 EXPOSE 9090
 
-ENTRYPOINT ["sh","-c","java","-jar","/opt/apps/AuthShiro-1.0.0.jar"]
+ENTRYPOINT ["java","-jar","-Dlogging.file=/var/lib/auth-shiro/run.log","/opt/apps/AuthShiro-1.0.0.jar"]
