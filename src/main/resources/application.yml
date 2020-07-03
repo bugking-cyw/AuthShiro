@@ -4,7 +4,7 @@ server:
 spring:
     datasource:
         name: ShiroJwt
-        url: jdbc:mysql://127.0.0.1:3306/shirojwt?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        url: jdbc:mysql://mysql:3306/shirojwt?useSSL=false&useUnicode=true&characterEncoding=UTF-8
         username: root
         password: 1qaz@WSX
         # 使用Druid数据源
