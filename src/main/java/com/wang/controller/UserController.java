@@ -66,6 +66,16 @@ public class UserController {
         return result;
     }
 
+    @GetMapping("/test2")
+    @ResponseBody
+    public Object test2(){
+        Map<String,Object> result = new HashMap<>();
+        result.put("message","这是自动化部署测试");
+        result.put("success",true);
+        result.put("data","my name is cyw");
+        return result;
+    }
+
     @GetMapping("/test")
     @ResponseBody
     public Object test(){
