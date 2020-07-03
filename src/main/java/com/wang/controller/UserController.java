@@ -56,7 +56,15 @@ public class UserController {
         this.userUtil = userUtil;
         this.userService = userService;
     }
-
+    @GetMapping("/test1")
+    @ResponseBody
+    public Object test1(){
+        Map<String,Object> result = new HashMap<>();
+        result.put("message","this is test1 controller");
+        result.put("success",true);
+        result.put("data","my name is tjl");
+        return result;
+    }
 
     @GetMapping("/test")
     @ResponseBody
