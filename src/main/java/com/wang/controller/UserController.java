@@ -57,6 +57,17 @@ public class UserController {
         this.userService = userService;
     }
 
+
+    @GetMapping("/test")
+    @ResponseBody
+    public Object test(){
+        Map<String,Object> result = new HashMap<>();
+        result.put("message","just do a test");
+        result.put("success",true);
+        result.put("data","my name is cyw");
+        return result;
+    }
+
     /**
      * 获取用户列表
      * @param 
